@@ -5,13 +5,15 @@ using UnityEngine.UI;
 
 
 //This script goes on the player object. It handles the collection, spawning, and loss of objects on contact.
-//Dependencies; Player: a trigger collider to make contact with the target objects. Target Objects: A non-trigger collider to activate the trigger
+//Dependencies; Player: a trigger collider to make contact with the target objects. Target Objects: A non-trigger collider to activate the trigger. Hint Giver: the "HintGiver" tag.
 public class PlayerPickup : MonoBehaviour
 {
     [Tooltip("The amount of objects the player has - no touching!")]
     public static int objects = 0;
     [Tooltip("The amount of objects the player needs to have before triggering the final one")]
     public int totalObjects = 9;
+    [Tooltip("The amount of clues that can be collected before the hint giver despawns")]
+    public int hintGiverDespawnThreshold = 5;
 
     [Tooltip("The UI element that displays the object count")]
     public Text uiText; //The UI element that displays the player's object count.
@@ -39,7 +41,13 @@ public class PlayerPickup : MonoBehaviour
         if (other.tag == "Object") //If it's an object to be picked up...
         {
             objects++; //Increment the object count
+            gameObject.GetComponent<Hints>().hintActive = false;
             other.gameObject.SetActive(false); //Remove the object from the scene.
+        }
+
+        if (objects == hintGiverDespawnThreshold) //If you've collected enough to despawn the hint giver...
+        {
+            GameObject.FindWithTag("HintGiver").SetActive(false); //Despawn him.
         }
 
         if (objects == totalObjects) //If you've collected all the objects...
