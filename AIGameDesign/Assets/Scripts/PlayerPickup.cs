@@ -21,6 +21,8 @@ public class PlayerPickup : MonoBehaviour
     public GameObject[] objectsToActivate;
     public GameObject finalObject; //The final, special object
 
+    public MonsterManager monsterManager; // a reference to the monster manager script that determines how the monster will behave with this amount of clues
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,22 @@ public class PlayerPickup : MonoBehaviour
         uiText.text = "Objects:" + objects; //Display current object count on UI
     }
 
+    void checkDistanceToClues()//checks distance to clues (not done in update for performance reasons)
+    {
+        for (int i = 0; i < objectsToActivate.Length; i++)
+        {
+            if (Vector3.Distance(transform.position, objectsToActivate[i].transform.position) < monsterManager.MinDistanceToClue)
+            {
+                monsterManager.toggleProtective(true);
+                return;
+            }
+            else
+            {
+                monsterManager.toggleProtective(false);
+            }
+        }
+    }
+
     private void OnTriggerEnter(Collider other) //When the player bumps into something...
     {
         if (other.tag == "Object") //If it's an object to be picked up...
@@ -43,6 +61,8 @@ public class PlayerPickup : MonoBehaviour
             objects++; //Increment the object count
             gameObject.GetComponent<Hints>().hintActive = false;
             other.gameObject.SetActive(false); //Remove the object from the scene.
+
+            monsterManager.updateMonster(objects);
         }
 
         if (objects == hintGiverDespawnThreshold) //If you've collected enough to despawn the hint giver...
