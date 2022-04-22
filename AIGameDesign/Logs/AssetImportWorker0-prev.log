@@ -1,445 +1,177 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.613; Version 2009; 64bit' Language: 'en' Physical Memory: 32157 MB
+OS: 'Windows 10 Home; OS build 19044.1645; Version 2009; 64bit' Language: 'en' Physical Memory: 16146 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Unity.exe
+C:\Users\ciara\2020.3.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/Lunar/OneDrive/Documents/Repo/AIGame/AIGameDesign
+C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54532
-Successfully changed project path to: C:/Users/Lunar/OneDrive/Documents/Repo/AIGame/AIGameDesign
-C:/Users/Lunar/OneDrive/Documents/Repo/AIGame/AIGameDesign
+58732
+Successfully changed project path to: C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign
+C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 30.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.58 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/Lunar/OneDrive/Documents/Repo/AIGame/AIGameDesign/Assets
+[Subsystems] Discovering subsystems at path C:/Users/ciara/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3070 Laptop GPU (ID=0x249d)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f55)
     Vendor:   
-    VRAM:     8044 MB
-    Driver:   30.0.15.1179
+    VRAM:     5980 MB
+    Driver:   30.0.15.1215
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56748
+Mono path[0] = 'C:/Users/ciara/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/ciara/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Users/ciara/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56192
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001595 seconds.
+Register platform support module: C:/Users/ciara/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002824 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.25 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.11 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.832 seconds
+- Completed reload, in  1.698 seconds
 Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (36ms)
+	ReloadAssembly (1698ms)
+		BeginReloadAssembly (58ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (286ms)
-			LoadAssemblies (35ms)
+		EndReloadAssembly (378ms)
+			LoadAssemblies (55ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (98ms)
+			SetupTypeCache (135ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (20ms)
-			SetupLoadedEditorAssemblies (118ms)
+			RebuildScriptCaches (27ms)
+			SetupLoadedEditorAssemblies (147ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (29ms)
-				BeforeProcessingInitializeOnLoad (6ms)
-				ProcessInitializeOnLoadAttributes (57ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
+				RefreshPlugins (35ms)
+				BeforeProcessingInitializeOnLoad (15ms)
+				ProcessInitializeOnLoadAttributes (69ms)
+				ProcessInitializeOnLoadMethodAttributes (25ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002404 seconds.
+Registered in 0.003752 seconds.
 Begin MonoManager ReloadAssembly
+Symbol file data-0000018F8C7896E0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86958060 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8673B410 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8BDAD890 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F867E2230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F867E2230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C651C20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C10BA20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86743420 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86AF4B10 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86432BD0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86753430 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8683DF00 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B2E7020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8BF95E30 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B2E7020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8BF95E30 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86958060 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B3BD230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B33B020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B33B020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8AA11040 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86769880 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F868ABF20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B4D87A0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8AE23010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8AC03250 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.694 seconds
+- Completed reload, in  1.004 seconds
 Domain Reload Profiling:
-	ReloadAssembly (695ms)
-		BeginReloadAssembly (93ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (561ms)
-			LoadAssemblies (58ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (176ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (234ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (45ms)
-				ProcessInitializeOnLoadAttributes (177ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2029 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.1 MB.
-System memory in use after: 95.1 MB.
-
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2466.
-Total: 2.700300 ms (FindLiveObjects: 0.192800 ms CreateObjectMapping: 0.054800 ms MarkObjects: 2.336200 ms  DeleteObjects: 0.115200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56f67d0682a45bf8e6fc04ef6749840') in 0.023419 seconds 
-  Import took 0.027451 seconds .
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 2.20 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 50.8 MB.
-System memory in use after: 50.9 MB.
-
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 2466.
-Total: 3.040900 ms (FindLiveObjects: 0.200200 ms CreateObjectMapping: 0.041700 ms MarkObjects: 2.728800 ms  DeleteObjects: 0.069500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004599 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.698 seconds
-Domain Reload Profiling:
-	ReloadAssembly (698ms)
-		BeginReloadAssembly (96ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (560ms)
-			LoadAssemblies (59ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (179ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (228ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.44 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1974 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.1 MB.
-System memory in use after: 90.2 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2469.
-Total: 3.383000 ms (FindLiveObjects: 0.226900 ms CreateObjectMapping: 0.054300 ms MarkObjects: 2.996300 ms  DeleteObjects: 0.104500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 580.066936 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33991c02c1618edb3a8a7235570b3771') in 0.021001 seconds 
-  Import took 0.025354 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 136.456517 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Clue Profile.asset
-  artifactKey: Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Clue Profile.asset using Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9919f62aa9ccca18f414edf1fc047a') in 0.013343 seconds 
-  Import took 0.018167 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Main Camera Profile.asset
-  artifactKey: Guid(36b0e744728ca9c4a92846507aa7aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Main Camera Profile.asset using Guid(36b0e744728ca9c4a92846507aa7aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ad1a3be0435bb5a1c6f7d4d234ba46') in 0.011593 seconds 
-  Import took 0.015729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000147 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Clue Profile.asset
-  artifactKey: Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Clue Profile.asset using Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b9919f62aa9ccca18f414edf1fc047a') in 0.002910 seconds 
-  Import took 0.006875 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.017775 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Main Camera Profile.asset
-  artifactKey: Guid(36b0e744728ca9c4a92846507aa7aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Main Camera Profile.asset using Guid(36b0e744728ca9c4a92846507aa7aadc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ad1a3be0435bb5a1c6f7d4d234ba46') in 0.003786 seconds 
-  Import took 0.008373 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002364 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.674 seconds
-Domain Reload Profiling:
-	ReloadAssembly (674ms)
-		BeginReloadAssembly (98ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (536ms)
-			LoadAssemblies (58ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (173ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (27ms)
-			SetupLoadedEditorAssemblies (213ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (40ms)
-				ProcessInitializeOnLoadAttributes (161ms)
-				ProcessInitializeOnLoadMethodAttributes (2ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.42 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.1 MB.
-System memory in use after: 90.2 MB.
-
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2471.
-Total: 2.583900 ms (FindLiveObjects: 0.169500 ms CreateObjectMapping: 0.048700 ms MarkObjects: 2.282600 ms  DeleteObjects: 0.082300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 104.272895 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Clue Profile.asset
-  artifactKey: Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Clue Profile.asset using Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2b0ac248f658a70bea6e1200ecc30a') in 0.021143 seconds 
-  Import took 0.025407 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002339 seconds.
-  path: Assets/Scenes/SampleScene_Profiles/Clue Profile.asset
-  artifactKey: Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene_Profiles/Clue Profile.asset using Guid(197b1cac181831245b8406c937b4a887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de2b0ac248f658a70bea6e1200ecc30a') in 0.003659 seconds 
-  Import took 0.008505 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002354 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.683 seconds
-Domain Reload Profiling:
-	ReloadAssembly (683ms)
-		BeginReloadAssembly (89ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (553ms)
-			LoadAssemblies (59ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (179ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (220ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (41ms)
-				ProcessInitializeOnLoadAttributes (167ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.2 MB.
-System memory in use after: 90.2 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2473.
-Total: 2.629500 ms (FindLiveObjects: 0.170000 ms CreateObjectMapping: 0.049500 ms MarkObjects: 2.325000 ms  DeleteObjects: 0.084200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002254 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.43 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.686 seconds
-Domain Reload Profiling:
-	ReloadAssembly (686ms)
-		BeginReloadAssembly (94ms)
+	ReloadAssembly (1005ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (552ms)
-			LoadAssemblies (59ms)
+			CreateAndSetChildDomain (18ms)
+		EndReloadAssembly (802ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (176ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (221ms)
+			SetupTypeCache (268ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (320ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (42ms)
-				ProcessInitializeOnLoadAttributes (166ms)
-				ProcessInitializeOnLoadMethodAttributes (3ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (84ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 2 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.61 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 90.2 MB.
-System memory in use after: 90.2 MB.
+Unloading 2029 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 95.2 MB.
+System memory in use after: 95.3 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2475.
-Total: 2.680900 ms (FindLiveObjects: 0.184600 ms CreateObjectMapping: 0.051500 ms MarkObjects: 2.354400 ms  DeleteObjects: 0.089600 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2466.
+Total: 3.840500 ms (FindLiveObjects: 0.237400 ms CreateObjectMapping: 0.099200 ms MarkObjects: 3.335300 ms  DeleteObjects: 0.166800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -448,6 +180,802 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets/Scenes
+  artifactKey: Guid(74817330fc5dabe41a920c3b0e3f5f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(74817330fc5dabe41a920c3b0e3f5f19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8757cfeb29bdad2a42313df5d9bba414') in 0.004875 seconds 
+  Import took 0.009183 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.339330 seconds.
+  path: Assets/Scenes/CiaranAnimation.unity
+  artifactKey: Guid(5b7b2bfc44f1eda419e4d0d247ebac52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CiaranAnimation.unity using Guid(5b7b2bfc44f1eda419e4d0d247ebac52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e91d097a9a9932816d2b21fb55a72817') in 0.010297 seconds 
+  Import took 0.013207 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.621038 seconds.
+  path: Assets/Models
+  artifactKey: Guid(67ab986d2b323854abe9fde723b1db75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models using Guid(67ab986d2b323854abe9fde723b1db75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c920b040e8b245ef3038a4e1c8a43d') in 0.002603 seconds 
+  Import took 0.006271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.539654 seconds.
+  path: Assets/Animations
+  artifactKey: Guid(58c80b01f04f15142a8042af338ed283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations using Guid(58c80b01f04f15142a8042af338ed283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a9d7da719b78f72010cbf55d866fcfd') in 0.002669 seconds 
+  Import took 0.006232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.406606 seconds.
+  path: Assets/Animations/Dying.fbx
+  artifactKey: Guid(db8287a4ac310c440b9516dffa544c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Dying.fbx using Guid(db8287a4ac310c440b9516dffa544c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8aac268763943e60bc216b90108e4de3') in 0.067291 seconds 
+  Import took 0.070350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.441563 seconds.
+  path: Assets/Animations/Dying 1.fbx
+  artifactKey: Guid(8b6a8835774570f4d9e5f2c67350cd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Dying 1.fbx using Guid(8b6a8835774570f4d9e5f2c67350cd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bce26722b44e190ef3a36a8948ae563f') in 0.007655 seconds 
+  Import took 0.010980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Animations/Zombie Running.fbx
+  artifactKey: Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Zombie Running.fbx using Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56bdd9c83defc31d708985dc4da0bf76') in 0.006566 seconds 
+  Import took 0.009383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Animations/Zombie Walk.fbx
+  artifactKey: Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Zombie Walk.fbx using Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02d994481b049cd49784af52f2784149') in 0.006896 seconds 
+  Import took 0.010060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Animations/Zombie Idle.fbx
+  artifactKey: Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Zombie Idle.fbx using Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9c164fcd45fc85b48ac246f930db51') in 0.007098 seconds 
+  Import took 0.010111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/Animations/Idle.fbx
+  artifactKey: Guid(23f168dee6f483449a2622464890402f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Idle.fbx using Guid(23f168dee6f483449a2622464890402f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cb9eccc2dbdeda966d866fca23fa56') in 0.007055 seconds 
+  Import took 0.010189 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.299723 seconds.
+  path: Assets/Animations/Clips
+  artifactKey: Guid(69ec395781bbd1140964d667cbd8824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips using Guid(69ec395781bbd1140964d667cbd8824a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8f7a33111a045eff13ad49d601ebe36') in 0.003013 seconds 
+  Import took 0.006242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.469265 seconds.
+  path: Assets/Animations/Controllers
+  artifactKey: Guid(1ab0bcbb13cdeff49b6a445fc6e44b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Controllers using Guid(1ab0bcbb13cdeff49b6a445fc6e44b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1495c98ee7905540f5b9e90a19b13a66') in 0.002909 seconds 
+  Import took 0.006375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.825566 seconds.
+  path: Assets/Animations/Controllers/EnemyController.controller
+  artifactKey: Guid(a5dd5f4db86c12448bc43154eb26aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Controllers/EnemyController.controller using Guid(a5dd5f4db86c12448bc43154eb26aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d0347ac677c88b72aa1845cc894ad69') in 0.006992 seconds 
+  Import took 0.009954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.442737 seconds.
+  path: Assets/Animations/Controllers/AnimationController.controller
+  artifactKey: Guid(16e7e327de0ca8f4e8d44858c6fa73af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Controllers/AnimationController.controller using Guid(16e7e327de0ca8f4e8d44858c6fa73af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9885d8167f12034aea37703c912770b') in 0.002901 seconds 
+  Import took 0.006416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.908467 seconds.
+  path: Assets/Animations/Controllers/AllyController.controller
+  artifactKey: Guid(16e7e327de0ca8f4e8d44858c6fa73af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Controllers/AllyController.controller using Guid(16e7e327de0ca8f4e8d44858c6fa73af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f01511cf2406eb451c341ba7dbcb15') in 0.003557 seconds 
+  Import took 0.006535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.146890 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(14ed6acff8b98c544bc207b16d936250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(14ed6acff8b98c544bc207b16d936250) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38974baa1f994a3dfa208829502b5bb4') in 0.002107 seconds 
+  Import took 0.004778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.062988 seconds.
+  path: Assets/Prefabs/Bush.prefab
+  artifactKey: Guid(652528044556fa94e85a74d4f6da4626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bush.prefab using Guid(652528044556fa94e85a74d4f6da4626) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06ad0fc7bde7aca89501cf56ff400e12') in 0.053437 seconds 
+  Import took 0.056232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000148 seconds.
+  path: Assets/Prefabs/Fence.prefab
+  artifactKey: Guid(70d893a352a35ae4fa0541d10ad25576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Fence.prefab using Guid(70d893a352a35ae4fa0541d10ad25576) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e578d700f9508a816a49770c546783a') in 0.010353 seconds 
+  Import took 0.013106 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Prefabs/Tree.prefab
+  artifactKey: Guid(a2f8be5b8aed2ae44a4a70d5b9cce6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Tree.prefab using Guid(a2f8be5b8aed2ae44a4a70d5b9cce6df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c0265c4762f86dbd817406705af63c0') in 0.029977 seconds 
+  Import took 0.032636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.040850 seconds.
+  path: Assets/Models/Ch10_nonPBR.fbx
+  artifactKey: Guid(59831cbf00ff0dc47a30ac6d188842a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch10_nonPBR.fbx using Guid(59831cbf00ff0dc47a30ac6d188842a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38b19802ff2480d683bd608cc8fc9b9d') in 0.250437 seconds 
+  Import took 0.253432 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/Models/Ch33_nonPBR.fbx
+  artifactKey: Guid(4d305e664265f294191c49c3ef0a59fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch33_nonPBR.fbx using Guid(4d305e664265f294191c49c3ef0a59fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '293d0ca0cc9b418fce46cc43ce65fe32') in 0.305038 seconds 
+  Import took 0.307836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.060839 seconds.
+  path: Assets/Models/Ch10_nonPBR.fbx
+  artifactKey: Guid(59831cbf00ff0dc47a30ac6d188842a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch10_nonPBR.fbx using Guid(59831cbf00ff0dc47a30ac6d188842a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822e1b1dfd33bc017dac3684b80cb725') in 0.044180 seconds 
+  Import took 0.047127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.129773 seconds.
+  path: Assets/Models/Ch10_nonPBR.fbx
+  artifactKey: Guid(59831cbf00ff0dc47a30ac6d188842a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch10_nonPBR.fbx using Guid(59831cbf00ff0dc47a30ac6d188842a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '970868a68eb59f226c232ba0873868be') in 0.039363 seconds 
+  Import took 0.042984 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.108025 seconds.
+  path: Assets/Models/Ch33_nonPBR.fbx
+  artifactKey: Guid(4d305e664265f294191c49c3ef0a59fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch33_nonPBR.fbx using Guid(4d305e664265f294191c49c3ef0a59fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60d4a07835ca2d4291cf2919e8ccf12f') in 0.107963 seconds 
+  Import took 0.112229 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.135563 seconds.
+  path: Assets/Prefabs/Ch33_nonPBR.prefab
+  artifactKey: Guid(acf3c4248fffa9f4e87cb699437be05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ch33_nonPBR.prefab using Guid(acf3c4248fffa9f4e87cb699437be05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c12aae8b50d94bda4f61115ecafe0e5') in 0.064336 seconds 
+  Import took 0.068119 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.996297 seconds.
+  path: Assets/Prefabs/Ally.prefab
+  artifactKey: Guid(acf3c4248fffa9f4e87cb699437be05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ally.prefab using Guid(acf3c4248fffa9f4e87cb699437be05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e3a7f75d25245806993a521aaf97cc4') in 0.036542 seconds 
+  Import took 0.040306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.392152 seconds.
+  path: Assets/Models/Ch33_nonPBR.fbx
+  artifactKey: Guid(4d305e664265f294191c49c3ef0a59fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Ch33_nonPBR.fbx using Guid(4d305e664265f294191c49c3ef0a59fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b18767034126f3a9ea036c65a6ed267e') in 0.144675 seconds 
+  Import took 0.148435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.968164 seconds.
+  path: Assets/Prefabs/Ch10_nonPBR.prefab
+  artifactKey: Guid(d9701e7b07760b940af2fedfdcc9b1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Ch10_nonPBR.prefab using Guid(d9701e7b07760b940af2fedfdcc9b1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054f1d4fb5d8925c6214636adbce7e6a') in 0.042996 seconds 
+  Import took 0.047103 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.418369 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(d9701e7b07760b940af2fedfdcc9b1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(d9701e7b07760b940af2fedfdcc9b1e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b553c643aaa7581920e6c3f835ae02') in 0.033479 seconds 
+  Import took 0.037172 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004069 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000018F8F9D9D50 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86BB4020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8683DF00 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8EAF3040 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C1F3190 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F866ED000 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8EAF3040 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8AA16840 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C1F3190 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C9287A0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86438BA0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C497020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C6A4270 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8EAA5660 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C1F3190 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F928F8010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F866ED000 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86BC7F30 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8DDA0020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F3A9630 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8ABDA010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F863D4010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C9287A0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C9287A0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F50B030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8B33B020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C9287A0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.924 seconds
+Domain Reload Profiling:
+	ReloadAssembly (924ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (764ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (247ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (218ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1974 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.5 MB.
+System memory in use after: 107.5 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 2516.
+Total: 2.606000 ms (FindLiveObjects: 0.174600 ms CreateObjectMapping: 0.068300 ms MarkObjects: 2.280800 ms  DeleteObjects: 0.081200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 105.110599 seconds.
+  path: Assets/Animations/Clips/Dying.fbx
+  artifactKey: Guid(db8287a4ac310c440b9516dffa544c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Dying.fbx using Guid(db8287a4ac310c440b9516dffa544c9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49289280d2c4051590b2d475c15b299f') in 0.029530 seconds 
+  Import took 0.032602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Animations/Clips/Idle.fbx
+  artifactKey: Guid(23f168dee6f483449a2622464890402f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Idle.fbx using Guid(23f168dee6f483449a2622464890402f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4533c9a5e14e5956687ef48ba0e010') in 0.009610 seconds 
+  Import took 0.013305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002147 seconds.
+  path: Assets/Animations/Clips/Idle.fbx
+  artifactKey: Guid(23f168dee6f483449a2622464890402f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Idle.fbx using Guid(23f168dee6f483449a2622464890402f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd4533c9a5e14e5956687ef48ba0e010') in 0.007184 seconds 
+  Import took 0.010556 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003996 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000018F8F9D38B0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F9271BC20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8683DF00 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F344090 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C00D010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8EF7A020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92E23750 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8E319F60 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F933ED020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C65340 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F864322B0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F8D6060 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F719060 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92E45EF0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FC0F020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F8E7030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8EF7A020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92CF18F0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8E9CB010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F909E70D0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8AE8F030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C65340 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C65340 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FD69D60 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8AE45500 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8A9A5010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F9070F040 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Domain Reload Profiling:
+	ReloadAssembly (946ms)
+		BeginReloadAssembly (109ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (773ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (191ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.39 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.4 MB.
+System memory in use after: 107.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2518.
+Total: 2.510100 ms (FindLiveObjects: 0.163300 ms CreateObjectMapping: 0.066900 ms MarkObjects: 2.204100 ms  DeleteObjects: 0.074900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 68.219499 seconds.
+  path: Assets/Animations/Clips/Zombie Idle.fbx
+  artifactKey: Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55446509012aeb7ebf4a0c9fc475ecf3') in 0.029829 seconds 
+  Import took 0.033310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/Animations/Clips/Zombie Running.fbx
+  artifactKey: Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Running.fbx using Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a83c5650d57e98ee6ab9df90ae3f220e') in 0.006408 seconds 
+  Import took 0.009351 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Animations/Clips/Zombie Walk.fbx
+  artifactKey: Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '515072a321472c17b282b1b750da6214') in 0.006722 seconds 
+  Import took 0.009665 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003638 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000018F8E8FAEA0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB85CBAF0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8683DF00 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB8E3D030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C00D010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB833F420 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB8E3D030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F93614F20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8EAD7010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C65340 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F86438280 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8E64F070 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F9074FD40 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92CA3F90 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FC0F020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F8E7030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB833F420 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB872BED0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FBC7C40 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FA86DE0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F904EE090 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8E6AC520 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB7CE8080 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB8D60B30 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F503020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8BD70080 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C5C6010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.920 seconds
+Domain Reload Profiling:
+	ReloadAssembly (920ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (756ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (295ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (201ms)
+				ProcessInitializeOnLoadMethodAttributes (4ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.5 MB.
+System memory in use after: 107.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2520.
+Total: 2.532800 ms (FindLiveObjects: 0.166300 ms CreateObjectMapping: 0.064800 ms MarkObjects: 2.203200 ms  DeleteObjects: 0.097600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 167.121395 seconds.
+  path: Assets/Animations/Clips/Zombie Idle.fbx
+  artifactKey: Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64228c80a81ad1c5067854fff8d8f331') in 0.027511 seconds 
+  Import took 0.030372 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.686512 seconds.
+  path: Assets/Animations/Clips/Zombie Running.fbx
+  artifactKey: Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Running.fbx using Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e689f58c544ba2d91416b20816873518') in 0.007466 seconds 
+  Import took 0.010948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005641 seconds.
+  path: Assets/Animations/Clips/Zombie Running.fbx
+  artifactKey: Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Running.fbx using Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e689f58c544ba2d91416b20816873518') in 0.006640 seconds 
+  Import took 0.010044 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.553405 seconds.
+  path: Assets/Animations/Clips/Zombie Walk.fbx
+  artifactKey: Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ada2492e8fd40d7c1c7d2504cb157cb') in 0.006908 seconds 
+  Import took 0.010294 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004630 seconds.
+  path: Assets/Animations/Clips/Zombie Walk.fbx
+  artifactKey: Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ada2492e8fd40d7c1c7d2504cb157cb') in 0.006894 seconds 
+  Import took 0.010675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.025995 seconds.
+  path: Assets/Animations/Clips/Zombie Idle.fbx
+  artifactKey: Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493849a688b5e6cd5cd282956dc46940') in 0.006663 seconds 
+  Import took 0.009660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000993 seconds.
+  path: Assets/Animations/Clips/Zombie Idle.fbx
+  artifactKey: Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(81e058ce383bbdb4c9b998001bd2ab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '493849a688b5e6cd5cd282956dc46940') in 0.007824 seconds 
+  Import took 0.011017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010791 seconds.
+  path: Assets/Animations/Clips/Zombie Running.fbx
+  artifactKey: Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Running.fbx using Guid(2341356e8372b1f4e820bd5d3412d415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39717716c7ecc7d1d3fdb24c23e7816') in 0.006489 seconds 
+  Import took 0.009753 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000243 seconds.
+  path: Assets/Animations/Clips/Zombie Walk.fbx
+  artifactKey: Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(94bb813ce8c2d1c48b5b47569f0e639c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65a1826f6ddddac5009c98ffc60bce3c') in 0.007419 seconds 
+  Import took 0.010444 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003733 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000018F8C6AA100 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C843040 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8683DF00 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C48820 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F9071AFD0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB899D500 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F9123ACB0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB85D0850 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8A9C5050 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C65340 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB8E78840 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92CEE610 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F7E8270 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB8437000 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FC0F020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F8E7030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8CAA1020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F344090 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8E9CB010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F904EE090 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8FD05230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F8CEE40 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92C65340 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018FB9745020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8F503020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F92CA3F90 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000018F8C5C6010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.964 seconds
+Domain Reload Profiling:
+	ReloadAssembly (964ms)
+		BeginReloadAssembly (125ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (777ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (266ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (287ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (3ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.38 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1973 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 107.5 MB.
+System memory in use after: 107.6 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2522.
+Total: 2.504000 ms (FindLiveObjects: 0.160100 ms CreateObjectMapping: 0.065100 ms MarkObjects: 2.191900 ms  DeleteObjects: 0.086100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
