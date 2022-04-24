@@ -16,6 +16,11 @@ public class MonsterManager : MonoBehaviour
         monsterBehaviour = GetComponent<MonsterBehaviour>();
     }
 
+    void FixedUpdate()
+    {
+        MinDistanceToClue = monsterBehaviour.protectiveRange;
+    }
+
     public void updateMonster(int currentClues)
     {
         monsterBehaviour.currentClues = currentClues;

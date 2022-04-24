@@ -23,6 +23,8 @@ public class PlayerPickup : MonoBehaviour
 
     public MonsterManager monsterManager; // a reference to the monster manager script that determines how the monster will behave with this amount of clues
 
+    bool hasDespawnedHintGiver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +32,8 @@ public class PlayerPickup : MonoBehaviour
         {
             objectPicker();
         }
+
+        InvokeRepeating("checkDistanceToClues", 0, 0.1f);
     }
 
     // Update is called once per frame
@@ -61,13 +65,15 @@ public class PlayerPickup : MonoBehaviour
             objects++; //Increment the object count
             gameObject.GetComponent<Hints>().hintActive = false;
             other.gameObject.SetActive(false); //Remove the object from the scene.
+            uiText.GetComponent<Animator>().SetTrigger("Got Object");
 
-            monsterManager.updateMonster(objects);
+            monsterManager.updateMonster(objects);//upddates the behaviour of the monster to the current amount of clues you have
         }
 
-        if (objects == hintGiverDespawnThreshold) //If you've collected enough to despawn the hint giver...
+        if (objects >= hintGiverDespawnThreshold && !hasDespawnedHintGiver) //If you've collected enough to despawn the hint giver...
         {
             GameObject.FindWithTag("HintGiver").SetActive(false); //Despawn him.
+            hasDespawnedHintGiver = true; //so that its not trying to despawn him when he's already gone (throws null reference exeption)
         }
 
         if (objects == totalObjects) //If you've collected all the objects...
@@ -88,7 +94,7 @@ public class PlayerPickup : MonoBehaviour
             }
         }
     }
-    
+
     public void LoseObject() //Handles the loss of objects. Called externally. Not necessary.
     {
         if (objects > 0) //If you have any objects...

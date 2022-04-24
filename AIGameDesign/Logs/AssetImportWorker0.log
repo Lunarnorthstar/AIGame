@@ -1,177 +1,162 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.18f1 (a7d1c678663c) revision 10998214'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19044.1645; Version 2009; 64bit' Language: 'en' Physical Memory: 16146 MB
+OS: 'Windows 10 Home; OS build 22000.556; Version 2009; 64bit' Language: 'en' Physical Memory: 16150 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
 COMMAND LINE ARGUMENTS:
-C:\Users\ciara\2020.3.18f1\Editor\Unity.exe
+D:\Programs and Editors\Unity Versions\2020.3.18f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign
+D:/Creative Projects/Git/AIGame/AIGameDesign
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-52819
-Successfully changed project path to: C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign
-C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign
+55293
+Successfully changed project path to: D:/Creative Projects/Git/AIGame/AIGameDesign
+D:/Creative Projects/Git/AIGame/AIGameDesign
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 38.82 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 70.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.18f1 (a7d1c678663c)
-[Subsystems] Discovering subsystems at path C:/Users/ciara/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/ciara/OneDrive/Documents/GitHub/AIGame/AIGameDesign/Assets
+[Subsystems] Discovering subsystems at path D:/Programs and Editors/Unity Versions/2020.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Creative Projects/Git/AIGame/AIGameDesign/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f55)
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f15)
     Vendor:   
     VRAM:     5980 MB
-    Driver:   30.0.15.1215
+    Driver:   30.0.14.9733
 Initialize mono
-Mono path[0] = 'C:/Users/ciara/2020.3.18f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Users/ciara/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Users/ciara/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
+Mono path[0] = 'D:/Programs and Editors/Unity Versions/2020.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Programs and Editors/Unity Versions/2020.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'D:/Programs and Editors/Unity Versions/2020.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56264
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Users/ciara/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002448 seconds.
+Register platform support module: D:/Programs and Editors/Unity Versions/2020.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Programs and Editors/Unity Versions/2020.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001410 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 35.24 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 60.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.762 seconds
+- Completed reload, in  2.365 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1762ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (2366ms)
+		BeginReloadAssembly (65ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (375ms)
-			LoadAssemblies (51ms)
+		EndReloadAssembly (621ms)
+			LoadAssemblies (64ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (136ms)
+			SetupTypeCache (231ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (146ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (253ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (35ms)
-				BeforeProcessingInitializeOnLoad (14ms)
-				ProcessInitializeOnLoadAttributes (68ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
+				RefreshPlugins (60ms)
+				BeforeProcessingInitializeOnLoad (18ms)
+				ProcessInitializeOnLoadAttributes (125ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.004992 seconds.
+Registered in 0.002985 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000010E0DD8DF90 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-0000025209148060 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0DB0B020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file data-0000025208863030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E17C010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file data-000002522DB8B040 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0DCBDC40 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000025208863030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C9AC230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file data-0000025209262820 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C9AC230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file data-0000025208A0C220 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0DCBDC40 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file data-00000252035656D0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C44D030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file data-000002522DB5E230 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C9AC230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-000002522EA18530 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E351020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002522DCB5830 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E083927C0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file data-0000025208F56330 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E082D2E70 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file data-0000025209148060 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C9AC230 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002522DB01240 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C856020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002522D8BA010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C5F6830 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-000002522D8BA010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C7EE010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002522DB01240 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C5F6830 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-0000025208D5CB30 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C484320 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0CB0A220 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C875430 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0CF39010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E351020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E351020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E351020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C875430 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0D127010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0DAE1E20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file data-0000025208878640 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.978 seconds
+- Completed reload, in  1.797 seconds
 Domain Reload Profiling:
-	ReloadAssembly (979ms)
-		BeginReloadAssembly (134ms)
+	ReloadAssembly (1798ms)
+		BeginReloadAssembly (218ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (788ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (1497ms)
+			LoadAssemblies (128ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (257ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (316ms)
+			SetupTypeCache (489ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (102ms)
+			SetupLoadedEditorAssemblies (537ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (216ms)
-				ProcessInitializeOnLoadMethodAttributes (4ms)
-				AfterProcessingInitializeOnLoad (7ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (158ms)
+				ProcessInitializeOnLoadAttributes (356ms)
+				ProcessInitializeOnLoadMethodAttributes (6ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (6ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 0.65 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2029 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 95.9 MB.
-System memory in use after: 95.9 MB.
+Unloading 2038 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.1 MB.
+System memory in use after: 168.1 MB.
 
-Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2468.
-Total: 2.551700 ms (FindLiveObjects: 0.195000 ms CreateObjectMapping: 0.078400 ms MarkObjects: 2.159600 ms  DeleteObjects: 0.095600 ms)
+Unloading 18 unused Assets to reduce memory usage. Loaded Objects now: 2483.
+Total: 4.379600 ms (FindLiveObjects: 0.229700 ms CreateObjectMapping: 0.102900 ms MarkObjects: 3.871900 ms  DeleteObjects: 0.173800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -186,254 +171,751 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Ch10_nonPBR (2).prefab
-  artifactKey: Guid(f1907c6c943510942b183e606a0e81c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ch10_nonPBR (2).prefab using Guid(f1907c6c943510942b183e606a0e81c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '663d976a643aa1ae58672bc76d1187a5') in 0.115032 seconds 
-  Import took 0.117862 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 8.385693 seconds.
-  path: Assets/Prefabs/Monster.prefab
-  artifactKey: Guid(f1907c6c943510942b183e606a0e81c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Monster.prefab using Guid(f1907c6c943510942b183e606a0e81c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fba12ac71ce17e281eb25b3ea777794') in 0.030699 seconds 
-  Import took 0.034078 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 20.000699 seconds.
-  path: Assets/Prefabs/Ch10_nonPBR.fbx
-  artifactKey: Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ch10_nonPBR.fbx using Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b644eeaad7c82f34fe015f8cd0a678') in 0.139716 seconds 
-  Import took 0.142871 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 10.666832 seconds.
-  path: Assets/Prefabs/Ch10_nonPBR.fbx
-  artifactKey: Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ch10_nonPBR.fbx using Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342467822521da2383d6fd97b4e27131') in 0.049189 seconds 
-  Import took 0.052249 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 105.297902 seconds.
-  path: Assets/Models/Ch10_nonPBR.fbx
-  artifactKey: Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Ch10_nonPBR.fbx using Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c325ae1ce8aef7c569899e520017517') in 0.062286 seconds 
-  Import took 0.066030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.973764 seconds.
-  path: Assets/Models/Ch10_nonPBR.fbx
-  artifactKey: Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Ch10_nonPBR.fbx using Guid(6dd79485515df154bb83fd8eb157d278) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51603420a8ade67c6be6f47f39b6b92d') in 0.021572 seconds 
-  Import took 0.024684 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 145.548201 seconds.
-  path: Assets/Prefabs/Ch10_nonPBR.prefab
-  artifactKey: Guid(fac3679b77fc1cd41a920356953be982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Ch10_nonPBR.prefab using Guid(fac3679b77fc1cd41a920356953be982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da191bab34665ee6d4610fa28e02ba05') in 0.024946 seconds 
-  Import took 0.028511 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.963551 seconds.
-  path: Assets/Prefabs/Monster.prefab
-  artifactKey: Guid(fac3679b77fc1cd41a920356953be982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Monster.prefab using Guid(fac3679b77fc1cd41a920356953be982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da597afa960a81b2986f7f2304a4e043') in 0.033038 seconds 
-  Import took 0.036730 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 67.728222 seconds.
-  path: Assets/Animations/Clips/Zombie Running (1).fbx
-  artifactKey: Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Running (1).fbx using Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5783bf0fd7afb47a77a097d51e5ecfa') in 0.008010 seconds 
-  Import took 0.011552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002413 seconds.
-  path: Assets/Animations/Clips/Zombie Running (1).fbx
-  artifactKey: Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Running (1).fbx using Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5783bf0fd7afb47a77a097d51e5ecfa') in 0.006473 seconds 
-  Import took 0.009783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.622175 seconds.
-  path: Assets/Animations/Clips/Zombie Walk.fbx
-  artifactKey: Guid(3ec74a680583ebf469dfce740344a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(3ec74a680583ebf469dfce740344a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee89b620b919aee56754fa057b06b47') in 0.006767 seconds 
-  Import took 0.009935 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002390 seconds.
-  path: Assets/Animations/Clips/Zombie Walk.fbx
-  artifactKey: Guid(3ec74a680583ebf469dfce740344a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(3ec74a680583ebf469dfce740344a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ee89b620b919aee56754fa057b06b47') in 0.006571 seconds 
-  Import took 0.009791 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.119344 seconds.
-  path: Assets/Animations/Clips/Zombie Idle.fbx
-  artifactKey: Guid(820d89d1a54b52f4cb3667c9c434dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(820d89d1a54b52f4cb3667c9c434dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5a11c9f63f5410214470ece740bbef') in 0.006552 seconds 
-  Import took 0.009617 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000851 seconds.
-  path: Assets/Animations/Clips/Zombie Idle.fbx
-  artifactKey: Guid(820d89d1a54b52f4cb3667c9c434dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(820d89d1a54b52f4cb3667c9c434dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a5a11c9f63f5410214470ece740bbef') in 0.006668 seconds 
-  Import took 0.009740 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 80.587335 seconds.
-  path: Assets/Animations/Clips/Zombie Idle.fbx
-  artifactKey: Guid(820d89d1a54b52f4cb3667c9c434dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Idle.fbx using Guid(820d89d1a54b52f4cb3667c9c434dbef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50037befd188cbb79521892baf73c533') in 0.006665 seconds 
-  Import took 0.009964 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 9.768791 seconds.
-  path: Assets/Animations/Clips/Zombie Running (1).fbx
-  artifactKey: Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Running (1).fbx using Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b15726ecc4fbd26c88d386552cba496') in 0.005572 seconds 
-  Import took 0.008980 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000298 seconds.
-  path: Assets/Animations/Clips/Zombie Walk.fbx
-  artifactKey: Guid(3ec74a680583ebf469dfce740344a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Walk.fbx using Guid(3ec74a680583ebf469dfce740344a15e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9350653c59c2d55be9bf7bb0bae2d5') in 0.006379 seconds 
-  Import took 0.009093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000206 seconds.
-  path: Assets/Animations/Clips/Zombie Running (1).fbx
-  artifactKey: Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Clips/Zombie Running (1).fbx using Guid(de0885f7c25bf904191ffa89013ac891) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b15726ecc4fbd26c88d386552cba496') in 0.007026 seconds 
-  Import took 0.010745 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 83.402115 seconds.
-  path: Assets/Animations/Controllers/EnemyController.controller
-  artifactKey: Guid(a5dd5f4db86c12448bc43154eb26aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Animations/Controllers/EnemyController.controller using Guid(a5dd5f4db86c12448bc43154eb26aa0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ca4767cecca97921c7e507f4982c582') in 0.005831 seconds 
-  Import took 0.008694 seconds .
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7258d71d1a142ba68506d9fab4f0dac7') in 0.025812 seconds 
+  Import took 0.030848 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004048 seconds.
+Registered in 0.002335 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file data-0000010E124FEA20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Assembly-CSharp.dll
+Symbol file data-000002522E6F9160 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E10DDC490 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file data-000002522DB01240 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E10F8A020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file data-00000252035465B0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010CDF8F4B70 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file data-0000025208F75030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E07F78070 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file data-000002522DCA9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E13262020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file data-0000025208A51DE0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010CDF8F4B70 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file data-0000025234ADC6D0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E086F6360 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file data-000002522D31DC30 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C642020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+Symbol file data-0000025233FED0B0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E131C6020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file data-000002522E7C9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E08395E80 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file data-0000025230F6B8A0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010CDF9086A0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file data-000002522D328E90 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E160010 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file data-000002522DB01240 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0E42B030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.Editor.dll
+Symbol file data-000002523179AC60 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E13262020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Timeline.dll
+Symbol file data-00000252315A5030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E13204AE0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+Symbol file data-000002523094DE40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E13262020 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+Symbol file data-000002522F479030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
 Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E117ED460 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0F840080 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0C4808F0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E083A53E0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E10F9F630 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0DAE1E20 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E10F3E820 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E0DEA6030 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.UI.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E083A53E0 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll
-Symbol file LoadedFromMemory is not a mono symbol file
-Symbol file data-0000010E12F27620 doesn't match image C:\Users\ciara\OneDrive\Documents\GitHub\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file data-0000025203549BA0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
 Symbol file LoadedFromMemory is not a mono symbol file
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.936 seconds
+- Completed reload, in  1.322 seconds
 Domain Reload Profiling:
-	ReloadAssembly (936ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (1323ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
+			DisableScriptedObjects (6ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (769ms)
-			LoadAssemblies (90ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1103ms)
+			LoadAssemblies (109ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (249ms)
+			SetupTypeCache (386ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (38ms)
-			SetupLoadedEditorAssemblies (310ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (410ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (72ms)
-				ProcessInitializeOnLoadAttributes (219ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (103ms)
+				ProcessInitializeOnLoadAttributes (290ms)
 				ProcessInitializeOnLoadMethodAttributes (5ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				AfterProcessingInitializeOnLoad (2ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.37 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.49 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1974 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 107.8 MB.
-System memory in use after: 107.9 MB.
+Unloading 1983 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.1 MB.
+System memory in use after: 163.2 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2515.
-Total: 2.576100 ms (FindLiveObjects: 0.161100 ms CreateObjectMapping: 0.097100 ms MarkObjects: 2.250500 ms  DeleteObjects: 0.066500 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2486.
+Total: 3.951500 ms (FindLiveObjects: 0.212500 ms CreateObjectMapping: 0.092000 ms MarkObjects: 3.550600 ms  DeleteObjects: 0.095200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002165 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000025231204030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522DB01240 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208E2D3D0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208F56330 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208F56330 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208E2D3D0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234AF7160 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E995020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025233FEA7A0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EB7D020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208F56330 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EA21BF0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F08B520 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234CBA020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522DC11020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252088C6490 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EBFAA20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EBFAA20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.385 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1386ms)
+		BeginReloadAssembly (137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1169ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (414ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (454ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (131ms)
+				ProcessInitializeOnLoadAttributes (304ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.50 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2488.
+Total: 4.214800 ms (FindLiveObjects: 0.277800 ms CreateObjectMapping: 0.128400 ms MarkObjects: 3.702300 ms  DeleteObjects: 0.104600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002238 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-0000025208967010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EFB3030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000251E0087870 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EBF0010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230CF5020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000251E0087870 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234AEA4A0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252089C1C40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252779E4020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230F1D010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025277544DA0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208967010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230B49410 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522DB8D450 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234A7C010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252089C1C40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252318FF040 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230F1D010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.340 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1341ms)
+		BeginReloadAssembly (148ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1112ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (391ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (410ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (108ms)
+				ProcessInitializeOnLoadAttributes (285ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2490.
+Total: 3.838100 ms (FindLiveObjects: 0.264200 ms CreateObjectMapping: 0.118500 ms MarkObjects: 3.359400 ms  DeleteObjects: 0.094700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002229 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002522E636010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208B06020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E7C9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002523045E020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D194020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E7C9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234AF4F40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252088AA440 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025233FEB0C0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E0CEF20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D194020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F258220 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F08B520 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025278A90010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D8BA010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527A6FA600 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D2E1C20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E0CEF20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.492 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1493ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1252ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (422ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (467ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (324ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2492.
+Total: 4.231800 ms (FindLiveObjects: 0.227500 ms CreateObjectMapping: 0.100000 ms MarkObjects: 3.790900 ms  DeleteObjects: 0.112100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003368 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002527BF38400 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522DB01240 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230A6F850 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252315C5040 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EE73020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230A6F850 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234AF6050 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D8DE010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527B6888A0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E0CEF20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EE73020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527BF38400 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F08B520 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F19B040 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527C770080 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D8DE010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D2E1C20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E0CEF20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.800 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1800ms)
+		BeginReloadAssembly (219ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1473ms)
+			LoadAssemblies (232ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (536ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (72ms)
+			SetupLoadedEditorAssemblies (506ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (360ms)
+				ProcessInitializeOnLoadMethodAttributes (7ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.1 MB.
+System memory in use after: 163.2 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2494.
+Total: 4.660500 ms (FindLiveObjects: 0.294700 ms CreateObjectMapping: 0.148300 ms MarkObjects: 4.122000 ms  DeleteObjects: 0.094100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002313 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002527BF38400 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208B06020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230A6F850 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252789DA010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230CF5020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230A6F850 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234AEC6C0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D194020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025233FE9E80 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F2A9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527C31C750 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527BF38400 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F08B520 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527E4F0010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002523065E050 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D194020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D2E1C20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F2A9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.375 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1376ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1150ms)
+			LoadAssemblies (109ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (406ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (446ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (286ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2496.
+Total: 3.808400 ms (FindLiveObjects: 0.234400 ms CreateObjectMapping: 0.095600 ms MarkObjects: 3.374000 ms  DeleteObjects: 0.103200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002304 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-00000251E009DB10 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208B06020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E7C9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252307CF030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EB88430 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E7C9010 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527CFA1060 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E995020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002502006C950 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252789E6030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EB88430 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000251E009DB10 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F08B520 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522DB8D450 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527F6AFD30 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252315CD080 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527C75FD10 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522EA07030 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.544 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1545ms)
+		BeginReloadAssembly (187ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (56ms)
+		EndReloadAssembly (1266ms)
+			LoadAssemblies (139ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (517ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (416ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (106ms)
+				ProcessInitializeOnLoadAttributes (293ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.57 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2498.
+Total: 4.164200 ms (FindLiveObjects: 0.232400 ms CreateObjectMapping: 0.095200 ms MarkObjects: 3.735000 ms  DeleteObjects: 0.100200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002378 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file data-000002527E65B7F0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.KdTree.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025208B06020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Cinemachine.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527E65B7F0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522DB9D460 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\com.unity.cinemachine.editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025230D17020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527E65B7F0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AssetIdRemapUtility.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0000025234AE3E40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Stl.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D194020 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002502007B200 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.AddOns.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522E0D7A40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-00000252315FD070 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEngine.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527E65B7F0 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Csg.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522F08B520 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002523065E050 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002523065E050 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002527A6FA600 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002523094DE40 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.Rider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-000002522D2E1C20 doesn't match image D:\Creative Projects\Git\AIGame\AIGameDesign\Library\ScriptAssemblies\Unity.ProBuilder.Poly2Tri.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.372 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1373ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (1130ms)
+			LoadAssemblies (103ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (431ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (400ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (280ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (2ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.51 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1982 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.2 MB.
+System memory in use after: 163.3 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2500.
+Total: 4.113200 ms (FindLiveObjects: 0.262400 ms CreateObjectMapping: 0.104500 ms MarkObjects: 3.654400 ms  DeleteObjects: 0.090500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

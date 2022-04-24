@@ -18,7 +18,7 @@ public class Hints : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,10 +36,16 @@ public class Hints : MonoBehaviour
         {
             activeClues = GameObject.FindGameObjectsWithTag("Object");
             int hint = Random.Range(0, activeClues.Length);
-            
 
-
-            UItext.text =  "Try; " + activeClues[hint].gameObject.name;
+            if (!hintActive)
+            {
+                UItext.GetComponent<Animator>().Play("HintEnter");
+            }
+            else
+            {
+                UItext.GetComponent<Animator>().Play("Hint Text");
+            }
+            UItext.text = "Try; " + activeClues[hint].gameObject.name;
 
             hintActive = true;
         }

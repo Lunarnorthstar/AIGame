@@ -18,22 +18,29 @@ public class MonsterBehaviour : MonoBehaviour
     public float walkRadius;
     public float idleDelay;
 
+    [Space]
     public float currentClues;
-    public float alertRange;
+    public float alertRange; // the distance to the monster at which the monster gets alert (follows)
+    public float protectiveRange; // the distance the player gets to a clue before the monster gets aggresive (follows fast)
 
+    [Space]
     public float normalSpeed;
     public float protectiveSpeed;
 
+    [Space]
     public Transform player; // the place relative the player that the monster will follow.
 
+    [Header("Read Only")]
     [SerializeField] float distanceToTarget;
     [SerializeField] float distanceToPlayer;
 
-    bool hasReachedTarget;
-
+    [Space]
     public bool isAlert;
     public bool isFollowing;
     public bool isProtective;
+
+    private bool hasReachedTarget;
+
     Vector3 targetPos;
 
     public void Initialise()
@@ -43,7 +50,7 @@ public class MonsterBehaviour : MonoBehaviour
 
         targetPos = transform.position;
 
-        InvokeRepeating("checkIfReachedTarget", 0, 0.05f);
+        InvokeRepeating("checkIfReachedTarget", 0, 0.1f);
     }
 
     void checkIfReachedTarget()
