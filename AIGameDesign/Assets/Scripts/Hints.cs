@@ -45,7 +45,7 @@ public class Hints : MonoBehaviour
             {
                 UItext.GetComponent<Animator>().Play("Hint Text");
             }
-            UItext.text = "Try; " + activeClues[hint].gameObject.name;
+            UItext.text = "Try " + activeClues[hint].gameObject.name;
 
             hintActive = true;
         }
