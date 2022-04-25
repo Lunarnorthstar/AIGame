@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxStamina = 5;
     private float stamina;
     public float runSpeedMult = 2;
-    //public GameObject staminaBar;
+    public GameObject staminaBar;
 
     [Header("Movement variables")]
     private Vector3 moveDirection; //The direction the player is moving in
@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        // staminaBar.transform.localScale = new Vector3( 1000 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
+         staminaBar.transform.localScale = new Vector3( 1000 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
 
     }
 }
