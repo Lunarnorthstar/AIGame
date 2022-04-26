@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1221,7 +1221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &119816041
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2352,6 +2352,7 @@ GameObject:
   - component: {fileID: 289754883}
   - component: {fileID: 289754882}
   - component: {fileID: 289754881}
+  - component: {fileID: 289754888}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -2394,7 +2395,7 @@ MonoBehaviour:
   currentClues: 0
   alertRange: 30
   protectiveRange: 20
-  normalSpeed: 3
+  normalSpeed: 1
   protectiveSpeed: 5
   player: {fileID: 1960179825}
   distanceToTarget: 0
@@ -2402,6 +2403,8 @@ MonoBehaviour:
   isAlert: 0
   isFollowing: 0
   isProtective: 0
+  shouldWalk: 0
+  shouldRun: 0
 --- !u!195 &289754883
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2421,7 +2424,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 1
-  m_BaseOffset: 0.5
+  m_BaseOffset: -0.08
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!65 &289754884
@@ -2494,13 +2497,32 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 289754880}
   m_LocalRotation: {x: -0, y: -0.99909604, z: -0, w: -0.04251012}
-  m_LocalPosition: {x: -40.8052, y: 4.49, z: 56.509}
+  m_LocalPosition: {x: -40.8052, y: 4.97, z: 56.509}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1563100116}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -184.873, z: 0}
+--- !u!95 &289754888
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289754880}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6dd79485515df154bb83fd8eb157d278, type: 3}
+  m_Controller: {fileID: 9100000, guid: a5dd5f4db86c12448bc43154eb26aa0c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &294671854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3345,6 +3367,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6dd79485515df154bb83fd8eb157d278, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 6dd79485515df154bb83fd8eb157d278, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a5dd5f4db86c12448bc43154eb26aa0c, type: 2}
     - target: {fileID: 5901213795655131968, guid: 6dd79485515df154bb83fd8eb157d278, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -3401,7 +3431,8 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5866666021909216657, guid: 6dd79485515df154bb83fd8eb157d278, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6dd79485515df154bb83fd8eb157d278, type: 3}
 --- !u!1 &341699034
 GameObject:

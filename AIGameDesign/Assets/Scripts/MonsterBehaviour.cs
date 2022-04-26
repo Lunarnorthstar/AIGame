@@ -5,9 +5,10 @@ using UnityEngine.AI;
 
 public class MonsterBehaviour : MonoBehaviour
 {
+   Animator anim;
     NavMeshAgent agent;
     Renderer rend;
-
+  
     public Material green;
     public Material red;
     public Material yellow;
@@ -38,23 +39,36 @@ public class MonsterBehaviour : MonoBehaviour
     public bool isAlert;
     public bool isFollowing;
     public bool isProtective;
-
+    public bool shouldWalk;
+    public bool shouldRun;
     private bool hasReachedTarget;
+    private bool isIdling;
 
     Vector3 targetPos;
-
-    public void Initialise()
+    public void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+    }
+    public void Initialise()
+    {
+      //  agent = GetComponent<NavMeshAgent>();
         rend = GetComponent<Renderer>();
+        anim = GetComponent<Animator>();
 
         targetPos = transform.position;
 
         InvokeRepeating("checkIfReachedTarget", 0, 0.1f);
     }
 
+    private void OnAnimatorMove()
+    {
+        transform.position = agent.nextPosition;
+    }
     void checkIfReachedTarget()
     {
+        anim.SetBool("walk", shouldWalk);
+        anim.SetBool("Run", shouldRun);
         distanceToTarget = Vector3.Distance(transform.position, targetPos);
         distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
@@ -95,10 +109,22 @@ public class MonsterBehaviour : MonoBehaviour
 
         if (isAlert && isProtective)
         {
+            if(!isIdling)
+            {
+                shouldRun = true;
+                shouldWalk = false;
+            }
+         
             agent.speed = protectiveSpeed;
         }
         else
         {
+            if(!isIdling)
+            {
+                shouldRun = false;
+                shouldWalk = true;
+            }
+           
             agent.speed = normalSpeed;
         }
 
@@ -118,16 +144,21 @@ public class MonsterBehaviour : MonoBehaviour
 
     IEnumerator waitThenSetPos()
     {
+        shouldWalk = false;
+        shouldRun = false;
+
+        isIdling = true;
         yield return new WaitForSecondsRealtime(idleDelay);
 
         setNewPosition();
+        isIdling = false;
     }
 
     void setNewPosition()
     {
         targetPos = calculatePos();
         agent.destination = targetPos;
-
+      //  shouldWalk = true;
         hasReachedTarget = false;
     }
 
