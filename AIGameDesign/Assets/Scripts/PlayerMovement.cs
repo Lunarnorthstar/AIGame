@@ -18,6 +18,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody myRB; //The player's rigidbody
     public Transform cameraobject;
     public float movespeed;
+    public GameObject flashLight;
+    private bool turnOn=true;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -69,5 +72,19 @@ public class PlayerMovement : MonoBehaviour
 
          staminaBar.transform.localScale = new Vector3( 1000 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
 
+
+        if(Input.GetKeyDown(KeyCode.F))
+            {
+            if(turnOn)
+            {
+                flashLight.SetActive(false);
+                turnOn = !turnOn;
+            }
+            else if(!turnOn)
+            {
+                flashLight.SetActive(true);
+                turnOn = !turnOn;
+            }
+        }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Object
   - HintGiver
+  - Enemy
   layers:
   - Default
   - TransparentFX

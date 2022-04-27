@@ -54,7 +54,7 @@ public class MonsterBehaviour : MonoBehaviour
     {
       //  agent = GetComponent<NavMeshAgent>();
         rend = GetComponent<Renderer>();
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
 
         targetPos = transform.position;
 
@@ -63,7 +63,7 @@ public class MonsterBehaviour : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        transform.position = agent.nextPosition;
+        transform.position = agent.nextPosition;    
     }
     void checkIfReachedTarget()
     {

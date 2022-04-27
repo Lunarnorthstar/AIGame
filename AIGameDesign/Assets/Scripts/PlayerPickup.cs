@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 //This script goes on the player object. It handles the collection, spawning, and loss of objects on contact.
@@ -14,6 +15,8 @@ public class PlayerPickup : MonoBehaviour
     public int totalObjects = 9;
     [Tooltip("The amount of clues that can be collected before the hint giver despawns")]
     public int hintGiverDespawnThreshold = 5;
+
+    public Transform respawnpos;
 
     [Tooltip("The UI element that displays the object count")]
     public Text uiText; //The UI element that displays the player's object count.
@@ -39,7 +42,8 @@ public class PlayerPickup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        uiText.text = "Objects:" + objects; //Display current object count on UI
+        uiText.text = "Clues: " + objects + "/10"; //Display current object count on UI
+
     }
 
     void checkDistanceToClues()//checks distance to clues (not done in update for performance reasons)
@@ -79,6 +83,20 @@ public class PlayerPickup : MonoBehaviour
         if (objects == totalObjects) //If you've collected all the objects...
         {
             finalObject.SetActive(true); //Activate the special, final one.
+        }
+
+        if(other.gameObject == finalObject)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+        }
+
+        if (other.name == "Monster" && objects >= 4)
+        {
+            Debug.Log("Boo");
+
+            LoseObject();
+
+            gameObject.transform.position = respawnpos.position;
         }
     }
 
