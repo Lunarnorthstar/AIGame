@@ -93,6 +93,10 @@ public class MonsterBehaviour : MonoBehaviour
             }
         }
 
+        if(currentClues>=10)
+        {
+            Destroy(gameObject);
+        }
         if (isAlert && isProtective)
         {
             rend.material = red;
