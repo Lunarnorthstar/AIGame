@@ -19,8 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform cameraobject;
     public float movespeed;
     public GameObject flashLight;
-    private bool turnOn=true;
-    
+    private bool turnOn = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +31,9 @@ public class PlayerMovement : MonoBehaviour
 
         //Getting player position
         StartCoroutine(TrackPlayer());
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
     //Tracking player position
     IEnumerator TrackPlayer()
@@ -70,19 +73,21 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-         staminaBar.transform.localScale = new Vector3( 1000 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
+        staminaBar.transform.localScale = new Vector3(1000 * (stamina / maxStamina), staminaBar.transform.localScale.y, staminaBar.transform.localScale.z); //Mess with the stamina bar gameobject to shrink it based on missing stamina
 
 
-        if(Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (turnOn)
             {
-            if(turnOn)
-            {
-                flashLight.SetActive(false);
+                //flashLight.SetActive(false);
+                flashLight.GetComponent<Animator>().Play("FlashlightExit");
                 turnOn = !turnOn;
             }
-            else if(!turnOn)
+            else if (!turnOn)
             {
-                flashLight.SetActive(true);
+                // flashLight.SetActive(true);
+                flashLight.GetComponent<Animator>().Play("FlashlightEnter");
                 turnOn = !turnOn;
             }
         }
