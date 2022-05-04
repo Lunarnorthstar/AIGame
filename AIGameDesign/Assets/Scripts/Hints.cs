@@ -14,15 +14,16 @@ public class Hints : MonoBehaviour
 
     public Text UItext;
 
-    public bool hintActive = false;
+    public bool hintActive = false; //Whether or not the player has a hint active. This affects their ability to get a new hint.
 
+    public GameObject interactPrompt;
     public GameObject popupPanel;
     public Text popupText;
-    public float popupTime = 3;
+    public float popupTime = 3; //The amount of time a popup lingers on the screen
     private float timer = 0;
-    private bool timerRun = false;
+    public bool timerRun = false; //Whether or not the timer should count up.
 
-    private bool firstTalk = true;
+    private bool firstTalk = true; //Whether it's the first time you've talked to the hint giver.
 
     // Start is called before the first frame update
     void Start()
@@ -46,40 +47,55 @@ public class Hints : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerStay(Collider other)
     {
-        if (other.collider.tag == "HintGiver" && hintActive == false)
+        if (other.tag == "HintGiver" && hintActive == false) //If the touching thing is the hint giver...
         {
-            if (!firstTalk)
+            interactPrompt.SetActive(true);
+            if (Input.GetKeyDown(KeyCode.E)) //When you press E...
             {
-                activeClues = GameObject.FindGameObjectsWithTag("Object");
-                int hint = Random.Range(0, activeClues.Length);
-
-                if (!hintActive)
+                
+                if (!firstTalk) //If it's not the first time you talked to him...
                 {
-                    UItext.GetComponent<Animator>().Play("HintEnter");
+                    activeClues = GameObject.FindGameObjectsWithTag("Object"); //Grab all the active clues in the scene.
+                    int hint = Random.Range(0, activeClues.Length); //Generate a random number in that set.
+
+                    if (!hintActive) //If you don't have a hint active...
+                    {
+                        UItext.GetComponent<Animator>().Play("HintEnter");
+                    }
+                    else
+                    {
+                        UItext.GetComponent<Animator>().Play("Hint Text");
+                    }
+
+                    UItext.text = "Try " + activeClues[hint].gameObject.name; //Update the UI to display the hint, which is the name of the clue (which is the location of the clue)
+
+                    popupPanel.SetActive(true);
+                    popupText.text = "Try " + activeClues[hint].gameObject.name; //Relay the same information via a popup window
+                    timerRun = true; //That only runs for a certain number of seconds...
+
+                    hintActive = true;
                 }
-                else
+                else if (firstTalk) //If it's the first time you've talked to him...
                 {
-                    UItext.GetComponent<Animator>().Play("Hint Text");
+                    popupPanel.SetActive(true);
+                    popupText.text =
+                        "Hey partner. Ready to work on this case? Talk to me if you need any ideas."; //Display custom text.
+                    timer = -2;
+                    timerRun = true; //That runs for a certain number of seconds (plus 2 because it's longer)
+                    firstTalk = false; //And it's not the first time you've talked to him anymore.
                 }
-
-                UItext.text = "Try " + activeClues[hint].gameObject.name;
-
-                popupPanel.SetActive(true);
-                popupText.text = "Try " + activeClues[hint].gameObject.name;
-                timerRun = true;
-
-                hintActive = true;
             }
-            else if (firstTalk)
-            {
-                popupPanel.SetActive(true);
-                popupText.text =
-                    "Hey partner. Ready to work on this case? Talk to me if you need any ideas.";
-                timerRun = true;
-                firstTalk = false;
-            }
+        }
+    }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "HintGiver") //If the touching thing is the hint giver...
+        {
+            interactPrompt.SetActive(false);
         }
     }
 }

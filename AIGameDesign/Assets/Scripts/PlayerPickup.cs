@@ -75,6 +75,24 @@ public class PlayerPickup : MonoBehaviour
             uiText.GetComponent<Animator>().SetTrigger("Got Object");
 
             hints.UItext.text = "Talk to your partner for a new hint";
+            
+            hints.popupPanel.SetActive(true);
+            int x = Random.Range(1, 4);
+            switch (x)
+            {
+                case 1: hints.popupText.text = "Looks like some bloodstains."; 
+                    break;
+                case 2: hints.popupText.text = "Some obvious fingerprints here."; 
+                    break;
+                case 3: hints.popupText.text = "Could this be the murder weapon?";
+                    break;
+                case 4: hints.popupText.text = "Footprints.";
+                    break;
+                default: hints.popupText.text = "It's a clue.";
+                    break;
+            }
+
+            hints.timerRun = true;
 
             monsterManager.updateMonster(objects);//updates the behaviour of the monster to the current amount of clues you have
         }
