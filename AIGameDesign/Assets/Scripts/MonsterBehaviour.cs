@@ -5,13 +5,15 @@ using UnityEngine.AI;
 
 public class MonsterBehaviour : MonoBehaviour
 {
-   Animator anim;
+    Animator anim;
     NavMeshAgent agent;
     Renderer rend;
-  
+
     public Material green;
     public Material red;
     public Material yellow;
+
+    Vector3 targetPos;
 
     //the distance at which it will choose a new position to go to.
     //maximum distance from player to calculate new distance
@@ -44,15 +46,16 @@ public class MonsterBehaviour : MonoBehaviour
     private bool hasReachedTarget;
     private bool isIdling;
 
-    Vector3 targetPos;
+
     public void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
     }
+
     public void Initialise()
     {
-      //  agent = GetComponent<NavMeshAgent>();
+        //  agent = GetComponent<NavMeshAgent>();
         rend = GetComponent<Renderer>();
         //anim = GetComponent<Animator>();
 
@@ -63,10 +66,12 @@ public class MonsterBehaviour : MonoBehaviour
 
     private void OnAnimatorMove()
     {
-        transform.position = agent.nextPosition;    
+        transform.position = agent.nextPosition;
     }
     void checkIfReachedTarget()
     {
+        //Debug.Log(canSeePlayer());
+
         anim.SetBool("walk", shouldWalk);
         anim.SetBool("Run", shouldRun);
         distanceToTarget = Vector3.Distance(transform.position, targetPos);
@@ -74,7 +79,7 @@ public class MonsterBehaviour : MonoBehaviour
 
         //if you are close enough to player, turn on alert (slowly following). this only works at more than 4 clues  and less than 8.
         //at more than 8 enemy AI is always in alert
-        if (currentClues >= 4)//if more than 4 clues
+        if (currentClues >= 2)//if more than 2 clues
         {
             if (currentClues < 8)// but less than 8
             {
@@ -93,7 +98,7 @@ public class MonsterBehaviour : MonoBehaviour
             }
         }
 
-        if(currentClues>=10)
+        if (currentClues >= 10)
         {
             Destroy(gameObject);
         }
@@ -113,22 +118,22 @@ public class MonsterBehaviour : MonoBehaviour
 
         if (isAlert && isProtective)
         {
-            if(!isIdling)
+            if (!isIdling)
             {
                 shouldRun = true;
                 shouldWalk = false;
             }
-         
+
             agent.speed = protectiveSpeed;
         }
         else
         {
-            if(!isIdling)
+            if (!isIdling)
             {
                 shouldRun = false;
                 shouldWalk = true;
             }
-           
+
             agent.speed = normalSpeed;
         }
 
@@ -143,6 +148,25 @@ public class MonsterBehaviour : MonoBehaviour
         {
             StartCoroutine(waitThenSetPos());
             hasReachedTarget = true;
+        }
+    }
+
+    public bool canSeePlayer()
+    {
+        Vector3 dir = player.position - transform.position;
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, dir, out hit))
+        {
+            if (hit.transform.gameObject.CompareTag("Player")) return true;
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            return false;
         }
     }
 
@@ -162,7 +186,7 @@ public class MonsterBehaviour : MonoBehaviour
     {
         targetPos = calculatePos();
         agent.destination = targetPos;
-      //  shouldWalk = true;
+        //  shouldWalk = true;
         hasReachedTarget = false;
     }
 
