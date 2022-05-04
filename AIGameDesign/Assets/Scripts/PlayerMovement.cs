@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform cameraobject;
     public float movespeed;
     public GameObject flashLight;
-    private bool turnOn = true;
+    public bool turnOn = true;
 
 
     // Start is called before the first frame update

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Rendering.PostProcessing;
 
 public class MonsterBehaviour : MonoBehaviour
 {
@@ -32,6 +33,18 @@ public class MonsterBehaviour : MonoBehaviour
 
     [Space]
     public Transform player; // the place relative the player that the monster will follow.
+    public Transform rayCastPos;
+
+    [Space]
+    public MeshRenderer EyeRend1;
+    public MeshRenderer EyeRend2;
+    public Material IdleWanderMat;
+    public Material ChaseMat;
+    public Material AggresiveMat;
+
+    public AnimationCurve NoiseGradient;
+    public PostProcessVolume processVolume;
+    public Grain grain;
 
     [Header("Read Only")]
     [SerializeField] float distanceToTarget;
@@ -41,6 +54,10 @@ public class MonsterBehaviour : MonoBehaviour
     public bool isAlert;
     public bool isFollowing;
     public bool isProtective;
+    public bool isAggresive;
+    public bool shouldChase;
+
+    [Space]
     public bool shouldWalk;
     public bool shouldRun;
     private bool hasReachedTarget;
@@ -51,6 +68,8 @@ public class MonsterBehaviour : MonoBehaviour
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
+
+        processVolume.profile.TryGetSettings(out grain);
     }
 
     public void Initialise()
@@ -70,15 +89,17 @@ public class MonsterBehaviour : MonoBehaviour
     }
     void checkIfReachedTarget()
     {
-        //Debug.Log(canSeePlayer());
 
         anim.SetBool("walk", shouldWalk);
         anim.SetBool("Run", shouldRun);
         distanceToTarget = Vector3.Distance(transform.position, targetPos);
         distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
+        grain.intensity.value = NoiseGradient.Evaluate(distanceToPlayer);
+
         //if you are close enough to player, turn on alert (slowly following). this only works at more than 4 clues  and less than 8.
         //at more than 8 enemy AI is always in alert
+
         if (currentClues >= 2)//if more than 2 clues
         {
             if (currentClues < 8)// but less than 8
@@ -92,31 +113,52 @@ public class MonsterBehaviour : MonoBehaviour
                     isAlert = false;
                 }
             }
-            else // is more than 4 clues and is more than or equal to 8 (always alert)
+            else // is more than 2 clues and is more than or equal to 8 (always alert)
             {
                 isAlert = true;
             }
+        }
+
+        if (player.GetComponent<PlayerMovement>().turnOn)
+        {//if it can see the player's flashlight then its aggreisve.
+            isAggresive = canSeePlayer();
+        }
+        else
+        {
+            isAggresive = false;
+        }
+
+        if (isAggresive || (isProtective && isAlert))
+        {
+            shouldChase = true;
+        }
+        else
+        {
+            shouldChase = false;
         }
 
         if (currentClues >= 10)
         {
             Destroy(gameObject);
         }
-        if (isAlert && isProtective)
+        if (shouldChase)
         {
-            rend.material = red;
+            EyeRend1.material = AggresiveMat;
+            EyeRend2.material = AggresiveMat;
         }
         else if (isAlert)
         {
-            rend.material = yellow;
+            EyeRend1.material = ChaseMat;
+            EyeRend2.material = ChaseMat;
         }
         else
         {
-            rend.material = green;
+            EyeRend1.material = IdleWanderMat;
+            EyeRend2.material = IdleWanderMat;
         }
 
 
-        if (isAlert && isProtective)
+        if (shouldChase)
         {
             if (!isIdling)
             {
@@ -138,7 +180,7 @@ public class MonsterBehaviour : MonoBehaviour
         }
 
         //if you are alert (so chasing player) it should just constantly update to player pos
-        if (isAlert)
+        if (isAlert || shouldChase)
         {
             setNewPosition();
             return; // dont go any further in this method
@@ -153,19 +195,21 @@ public class MonsterBehaviour : MonoBehaviour
 
     public bool canSeePlayer()
     {
-        Vector3 dir = player.position - transform.position;
+        Vector3 dir = player.position - rayCastPos.position;
         RaycastHit hit;
 
-        if (Physics.Raycast(transform.position, dir, out hit))
+        if (Physics.Raycast(rayCastPos.position, dir, out hit))
         {
             if (hit.transform.gameObject.CompareTag("Player")) return true;
             else
             {
+                Debug.Log(hit.transform.gameObject.name);
                 return false;
             }
         }
         else
         {
+
             return false;
         }
     }

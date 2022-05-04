@@ -44,6 +44,13 @@ public class MonsterManager : MonoBehaviour
 
     public void toggleProtective(bool protective)
     {
-        monsterBehaviour.isProtective = protective;
+        if (monsterBehaviour.isAggresive)
+        {
+            monsterBehaviour.isProtective = true;
+        }
+        else
+        {
+            monsterBehaviour.isProtective = protective;
+        }
     }
 }
