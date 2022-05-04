@@ -28,9 +28,12 @@ public class PlayerPickup : MonoBehaviour
 
     bool hasDespawnedHintGiver;
 
+    private Hints hints;
+
     // Start is called before the first frame update
     void Start()
     {
+        hints = gameObject.GetComponent<Hints>();
         for (int i = 0; i < totalObjects; i++) //Run the objectPicker function an amount of times equal to the max objects
         {
             objectPicker();
@@ -67,21 +70,29 @@ public class PlayerPickup : MonoBehaviour
         if (other.tag == "Object") //If it's an object to be picked up...
         {
             objects++; //Increment the object count
-            gameObject.GetComponent<Hints>().hintActive = false;
+            hints.hintActive = false;
             other.gameObject.SetActive(false); //Remove the object from the scene.
             uiText.GetComponent<Animator>().SetTrigger("Got Object");
 
-            monsterManager.updateMonster(objects);//upddates the behaviour of the monster to the current amount of clues you have
+            hints.UItext.text = "Talk to your partner for a new hint";
+
+            monsterManager.updateMonster(objects);//updates the behaviour of the monster to the current amount of clues you have
         }
 
-        if (objects >= hintGiverDespawnThreshold && !hasDespawnedHintGiver) //If you've collected enough to despawn the hint giver...
+        if (objects >= hintGiverDespawnThreshold) //If you've collected enough to despawn the hint giver...
         {
-            GameObject.FindWithTag("HintGiver").SetActive(false); //Despawn him.
-            hasDespawnedHintGiver = true; //so that its not trying to despawn him when he's already gone (throws null reference exeption)
+            if (!hasDespawnedHintGiver) //If you haven't already despawned the hint giver...
+            {
+                GameObject.FindWithTag("HintGiver").SetActive(false); //Despawn him.
+                hasDespawnedHintGiver = true; //so that its not trying to despawn him when he's already gone (throws null reference exeption)
+            }
+
+            hints.UItext.text = "Where is he?";
         }
 
         if (objects == totalObjects) //If you've collected all the objects...
         {
+            hints.UItext.text = "He needs my help";
             finalObject.SetActive(true); //Activate the special, final one.
         }
 
