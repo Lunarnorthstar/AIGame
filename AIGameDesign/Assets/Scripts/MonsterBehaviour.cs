@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Audio;
 
 public class MonsterBehaviour : MonoBehaviour
 {
@@ -41,6 +42,8 @@ public class MonsterBehaviour : MonoBehaviour
     public Material IdleWanderMat;
     public Material ChaseMat;
     public Material AggresiveMat;
+  //  private AudioSource source;
+   // public AudioClip patrol;
 
     public AnimationCurve NoiseGradient;
     public PostProcessVolume processVolume;
@@ -66,9 +69,10 @@ public class MonsterBehaviour : MonoBehaviour
 
     public void Start()
     {
+      //  source = gameObject.AddComponent<AudioSource>();
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
-
+    
         processVolume.profile.TryGetSettings(out grain);
     }
 
@@ -89,7 +93,8 @@ public class MonsterBehaviour : MonoBehaviour
     }
     void checkIfReachedTarget()
     {
-
+       // FindObjectOfType<AudioManager>().Play("Monster");
+      //  source.Play();
         anim.SetBool("walk", shouldWalk);
         anim.SetBool("Run", shouldRun);
         distanceToTarget = Vector3.Distance(transform.position, targetPos);

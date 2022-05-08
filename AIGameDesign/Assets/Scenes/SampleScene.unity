@@ -11633,11 +11633,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
-    volume: 0
-    pitch: 0.1
-    loop: 0
+  - name: Monster
+    clip: {fileID: 8300000, guid: 7d668d3c5353c4548addeeba7a9e8d0e, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
     source: {fileID: 0}
 --- !u!4 &484738735
 Transform:
