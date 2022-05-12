@@ -73,7 +73,7 @@ public class PlayerPickup : MonoBehaviour
             hints.hintActive = false;
             other.gameObject.SetActive(false); //Remove the object from the scene.
             uiText.GetComponent<Animator>().SetTrigger("Got Object");
-
+            FindObjectOfType<AudioManager>().Play("CluePickUp");
             hints.UItext.text = "Talk to your partner for a new hint";
             
             hints.popupPanel.SetActive(true);

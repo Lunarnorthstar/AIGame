@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     public float movespeed;
     public GameObject flashLight;
     public bool turnOn = true;
+    public Animator anim;
 
 
     // Start is called before the first frame update
@@ -53,12 +54,13 @@ public class PlayerMovement : MonoBehaviour
         moveDirection += cameraobject.right * Input.GetAxis("Horizontal"); //These two lines get the horizontal and vertical components of movement based on player input
         moveDirection.Normalize(); //Normalize it so it's between 0 and 1
         moveDirection.y = 0; //Make sure you aren't going up any
-
+        float moving = Input.GetAxis("Vertical");
         Vector3 movementVelocity = moveDirection * movespeed; //Multiply by speed to get velocity
-
+        anim.SetFloat("Movement", moving);
 
         if (Input.GetKey(KeyCode.LeftShift) && stamina > 0 && (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0))//If you're sprinting and not stationary and have stamina...
         {
+        
             movementVelocity *= runSpeedMult; //Multiply your speed by the relevant multiplier.
 
             stamina -= Time.deltaTime; //Reduce your stamina.
@@ -69,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!Input.GetKey(KeyCode.LeftShift) && stamina < maxStamina) //If you're not trying to sprint and your stamina is below maximum...
         {
+         
             stamina += Time.deltaTime; //Gain stamina based on time passed.
 
         }
