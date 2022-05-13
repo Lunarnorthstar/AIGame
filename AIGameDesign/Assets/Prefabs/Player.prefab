@@ -119,6 +119,9 @@ MonoBehaviour:
   staminaBar: {fileID: 0}
   cameraobject: {fileID: 6908556077951306811}
   movespeed: 3
+  flashLight: {fileID: 0}
+  turnOn: 1
+  anim: {fileID: 0}
 --- !u!54 &6908556076632875509
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -150,6 +153,12 @@ MonoBehaviour:
   activeClues: []
   UItext: {fileID: 0}
   hintActive: 0
+  convopause: 0
+  interactPrompt: {fileID: 0}
+  popupPanel: {fileID: 0}
+  popupText: {fileID: 0}
+  popupTime: 3
+  timerRun: 0
 --- !u!136 &7113619848530414426
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -178,6 +187,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   totalObjects: 9
   hintGiverDespawnThreshold: 5
+  respawnpos: {fileID: 0}
   uiText: {fileID: 0}
   objectsToActivate:
   - {fileID: 0}
@@ -191,6 +201,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   finalObject: {fileID: 0}
+  monsterManager: {fileID: 0}
 --- !u!1 &6908556077951306808
 GameObject:
   m_ObjectHideFlags: 0
