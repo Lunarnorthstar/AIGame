@@ -46,6 +46,10 @@ public class PlayerPickup : MonoBehaviour
     void Update()
     {
         uiText.text = "Clues: " + objects + "/10"; //Display current object count on UI
+        if (objects < totalObjects)
+        {
+            finalObject.SetActive(false); //A catch check to despawn the final object unless you have all the other clues
+        }
 
     }
 
@@ -71,22 +75,24 @@ public class PlayerPickup : MonoBehaviour
         {
             objects++; //Increment the object count
             hints.hintActive = false;
+            string clueType = other.GetComponent<ClueData>().clueType;
             other.gameObject.SetActive(false); //Remove the object from the scene.
+            
             uiText.GetComponent<Animator>().SetTrigger("Got Object");
             FindObjectOfType<AudioManager>().Play("CluePickUp");
             hints.UItext.text = "Talk to your partner for a new hint";
             
             hints.popupPanel.SetActive(true);
-            int x = Random.Range(1, 4);
-            switch (x)
+            
+            switch (clueType)
             {
-                case 1: hints.popupText.text = "Looks like some bloodstains."; 
+                case "Blood": hints.popupText.text = "Looks like some bloodstains."; 
                     break;
-                case 2: hints.popupText.text = "Some obvious fingerprints here."; 
+                case "Fingerprints": hints.popupText.text = "Some obvious fingerprints here."; 
                     break;
-                case 3: hints.popupText.text = "Could this be the murder weapon?";
+                case "Knife": hints.popupText.text = "Could this be the murder weapon?";
                     break;
-                case 4: hints.popupText.text = "Footprints.";
+                case "Final": hints.popupText.text = "...Partner?";
                     break;
                 default: hints.popupText.text = "It's a clue.";
                     break;

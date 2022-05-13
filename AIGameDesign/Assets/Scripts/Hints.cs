@@ -15,6 +15,7 @@ public class Hints : MonoBehaviour
     public Text UItext;
 
     public bool hintActive = false; //Whether or not the player has a hint active. This affects their ability to get a new hint.
+    public bool convopause = false;
 
     public GameObject interactPrompt;
     public GameObject popupPanel;
@@ -44,6 +45,7 @@ public class Hints : MonoBehaviour
             timer = 0;
             timerRun = false;
             popupPanel.SetActive(false);
+            convopause = false;
         }
     }
 
@@ -52,7 +54,7 @@ public class Hints : MonoBehaviour
         if (other.tag == "HintGiver" && hintActive == false) //If the touching thing is the hint giver...
         {
             interactPrompt.SetActive(true);
-            if (Input.GetKeyDown(KeyCode.E)) //When you press E...
+            if (Input.GetKey(KeyCode.E) && !convopause) //When you press E...
             {
                 
                 if (!firstTalk) //If it's not the first time you talked to him...
@@ -86,6 +88,8 @@ public class Hints : MonoBehaviour
                     timerRun = true; //That runs for a certain number of seconds (plus 2 because it's longer)
                     firstTalk = false; //And it's not the first time you've talked to him anymore.
                 }
+
+                convopause = true;
             }
         }
     }

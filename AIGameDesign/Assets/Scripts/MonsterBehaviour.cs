@@ -208,7 +208,7 @@ public class MonsterBehaviour : MonoBehaviour
             if (hit.transform.gameObject.CompareTag("Player")) return true;
             else
             {
-                Debug.Log(hit.transform.gameObject.name);
+                //Debug.Log(hit.transform.gameObject.name);
                 return false;
             }
         }

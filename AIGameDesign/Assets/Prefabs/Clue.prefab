@@ -5033,6 +5033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 830720166614326134}
   - component: {fileID: 6305823991919360029}
+  - component: {fileID: 5758547925501561852}
   m_Layer: 6
   m_Name: Clue
   m_TagString: Object
@@ -5068,3 +5069,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5758547925501561852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712942751488924686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe0ad1fe70aad3b4db0c83b5d747ba34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelPrefab: {fileID: 0}
+  clueType: 
