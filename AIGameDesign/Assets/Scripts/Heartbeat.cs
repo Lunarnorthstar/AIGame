@@ -6,28 +6,17 @@ public class Heartbeat : MonoBehaviour
 {
     private AudioSource audioSource;
 
+    public Transform enemy;
 
-    // Start is called before the first frame update
+    public AnimationCurve volume;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
-    
-    public void OnTriggerEnter(Collider other)
-    {
-        
 
-        if (other.tag == "Enemy")
-        {
-            Debug.Log("TEST");
-            audioSource.Play(0);
-        }
-    }
-    public void OnTriggerExit(Collider other)
+    void Update()
     {
-        if (other.tag == "Enemy")
-        {
-            audioSource.Pause();
-        }
+        audioSource.volume = volume.Evaluate(Vector3.Distance(transform.position, enemy.position));
     }
 }

@@ -57,7 +57,8 @@ public class PlayerPickup : MonoBehaviour
     {
         for (int i = 0; i < objectsToActivate.Length; i++)
         {
-            if (Vector3.Distance(transform.position, objectsToActivate[i].transform.position) < monsterManager.MinDistanceToClue)
+            if (Vector3.Distance(transform.position, objectsToActivate[i].transform.position) < monsterManager.MinDistanceToClue &&
+            objectsToActivate[i].activeSelf)
             {
                 monsterManager.toggleProtective(true);
                 return;
@@ -77,24 +78,29 @@ public class PlayerPickup : MonoBehaviour
             hints.hintActive = false;
             string clueType = other.GetComponent<ClueData>().clueType;
             other.gameObject.SetActive(false); //Remove the object from the scene.
-            
+
             uiText.GetComponent<Animator>().SetTrigger("Got Object");
             FindObjectOfType<AudioManager>().Play("CluePickUp");
             hints.UItext.text = "Talk to your partner for a new hint";
-            
+
             hints.popupPanel.SetActive(true);
-            
+
             switch (clueType)
             {
-                case "Blood": hints.popupText.text = "Looks like some bloodstains."; 
+                case "Blood":
+                    hints.popupText.text = "Looks like some bloodstains.";
                     break;
-                case "Fingerprints": hints.popupText.text = "Some obvious fingerprints here."; 
+                case "Fingerprints":
+                    hints.popupText.text = "Some obvious fingerprints here.";
                     break;
-                case "Knife": hints.popupText.text = "Could this be the murder weapon?";
+                case "Knife":
+                    hints.popupText.text = "Could this be the murder weapon?";
                     break;
-                case "Final": hints.popupText.text = "...Partner?";
+                case "Final":
+                    hints.popupText.text = "...Partner?";
                     break;
-                default: hints.popupText.text = "It's a clue.";
+                default:
+                    hints.popupText.text = "It's a clue.";
                     break;
             }
 
@@ -120,14 +126,14 @@ public class PlayerPickup : MonoBehaviour
             finalObject.SetActive(true); //Activate the special, final one.
         }
 
-        if(other.gameObject == finalObject)
+        if (other.gameObject == finalObject)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         if (other.name == "Monster" && objects >= 4)
         {
-            Debug.Log("Boo");
+            //Debug.Log("Boo");
 
             LoseObject();
 
@@ -153,6 +159,7 @@ public class PlayerPickup : MonoBehaviour
         if (objects > 0) //If you have any objects...
         {
             objects--; //Lose one...
+            monsterManager.monsterBehaviour.currentClues--;
             objectPicker(); //And spawn a random one in the scene.
         }
     }

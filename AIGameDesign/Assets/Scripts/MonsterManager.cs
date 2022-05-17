@@ -6,7 +6,7 @@ using UnityEngine;
 public class MonsterManager : MonoBehaviour
 {
     public PlayerPickup playerPickup;
-    MonsterBehaviour monsterBehaviour;
+    public MonsterBehaviour monsterBehaviour;
 
     public float MinDistanceToClue = 5; //how close player can get to clue before ai gets protective
 
@@ -25,32 +25,26 @@ public class MonsterManager : MonoBehaviour
     {
         monsterBehaviour.currentClues = currentClues;
 
-        switch (currentClues)
-        {
-            case 1:
-                monsterBehaviour.Initialise();
-                break;
-            case 2:
-                monsterBehaviour.isFollowing = true;
-                break;
-            case 3:
-                monsterBehaviour.isFollowing = true;
-                break;
-            case 4:
-                monsterBehaviour.isFollowing = false;
-                break;
-        }
+        // switch (currentClues)
+        // {
+        //     case 1:
+        //         //monsterBehaviour.Initialise();
+        //         break;
+        //     case 2:
+        //         monsterBehaviour.isFollowing = true;
+        //         break;
+        //     case 3:
+        //         monsterBehaviour.isFollowing = true;
+        //         break;
+        //     case 4:
+        //         monsterBehaviour.isFollowing = false;
+        //         break;
+        // }
     }
 
     public void toggleProtective(bool protective)
     {
-        if (monsterBehaviour.isAggresive)
-        {
-            monsterBehaviour.isProtective = true;
-        }
-        else
-        {
+        if (monsterBehaviour.currentClues >= 7)
             monsterBehaviour.isProtective = protective;
-        }
     }
 }
