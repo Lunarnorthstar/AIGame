@@ -34,7 +34,7 @@ public class MonsterBehaviour : MonoBehaviour
     public Transform player; // the place relative the player that the monster will follow.
     public Transform rayCastPos;
     public farObjects[] farObjects;
-    Transform currentFarObject;
+    public Transform currentFarObject;
 
     [Space]
     public MeshRenderer EyeRend1;
@@ -117,6 +117,18 @@ public class MonsterBehaviour : MonoBehaviour
                     currentFarObject = farObject.transform;
                 }
             }
+
+            calculatePos();
+
+            if (Vector3.Distance(transform.position, player.position) < 10)
+            {
+                shouldChase = true;
+            }
+            else
+            {
+                shouldChase = false;
+            }
+
         }
         else
         {
@@ -125,14 +137,14 @@ public class MonsterBehaviour : MonoBehaviour
         }
 
         // SUMMARY
-        // if you have less than 9 clues but more than 2 and you are within a certain range, then be alert
-        if (currentClues < 9 && currentClues > 2)// but less than 8
+        // if you have less than 9 clues but more than or equal to 2 and you are within a certain range, then be alert
+        if (currentClues < 9 && currentClues >= 2)// but less than 8
         {
             if (distanceToPlayer < alertRange)// and is within range
             {
                 isAlert = true;
             }
-            else if (canSeePlayer() && distanceToPlayer < longAlertRange)
+            else if (canSeePlayer() && distanceToPlayer < longAlertRange && currentClues > 1)
             {
                 isAlert = true;
             }
@@ -150,13 +162,18 @@ public class MonsterBehaviour : MonoBehaviour
             isAlert = false;
         }
 
+        if (currentClues < 2)
+        {
+
+        }
+
         //if is alert and your flashlight is on and he can see you then chase mode.
         if (player.GetComponent<PlayerMovement>().turnOn && isAlert && canSeePlayer())
         {
             isAggresive = true;
             // isAggresive = canSeePlayer();
         }
-        else if (distanceToPlayer < 10)
+        else if (distanceToPlayer < 10 && currentClues > 1)
         {
             isAggresive = true;
         }
@@ -167,13 +184,16 @@ public class MonsterBehaviour : MonoBehaviour
 
         //protectivness is handled by the monster manager and player pickup scripts.
 
-        if (isAggresive || (isProtective && isAlert))//if is either aggresive or (protecive and alert) then chase mode.
+        if (currentClues > 2)
         {
-            shouldChase = true;
-        }
-        else
-        {
-            shouldChase = false;
+            if (isAggresive || (isProtective && isAlert))//if is either aggresive or (protecive and alert) then chase mode.
+            {
+                shouldChase = true;
+            }
+            else
+            {
+                shouldChase = false;
+            }
         }
 
         //kill on collection of body
@@ -183,7 +203,7 @@ public class MonsterBehaviour : MonoBehaviour
         }
 
         //deal with eye colours
-        if (shouldChase)
+        if (shouldChase && currentClues > 2)
         {
             EyeRend1.material = AggresiveMat;
             EyeRend2.material = AggresiveMat;

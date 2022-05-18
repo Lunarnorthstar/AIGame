@@ -2351,7 +2351,7 @@ GameObject:
   - component: {fileID: 119833538}
   - component: {fileID: 119833537}
   - component: {fileID: 119833536}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2404,7 +2404,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd2c092ef7c198f40bedf3b47ac16a1c, type: 2}
+  - {fileID: 2100000, guid: 60a8a2a30c9c2d447b5f196ee9c065f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3897,6 +3897,7 @@ MonoBehaviour:
   player: {fileID: 617179370}
   rayCastPos: {fileID: 518998797}
   farObjects: []
+  currentFarObject: {fileID: 1317176870}
   EyeRend1: {fileID: 267947985}
   EyeRend2: {fileID: 256218824}
   IdleWanderMat: {fileID: 2100000, guid: 16322b1b857f171429443ee576f0e261, type: 2}
@@ -5049,6 +5050,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: -7049877918438093708, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df64dea0490dc2d4a99d92d4fc24b4fb, type: 2}
+    - target: {fileID: -4683669308469848369, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2d4c2b1b878b5c45b2eb9cb04c53f56, type: 2}
+    - target: {fileID: -3671582440132503848, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df64dea0490dc2d4a99d92d4fc24b4fb, type: 2}
     - target: {fileID: 919132149155446097, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
       propertyPath: m_Name
       value: Bench (2)
@@ -5708,7 +5721,7 @@ GameObject:
   - component: {fileID: 347206176}
   - component: {fileID: 347206175}
   - component: {fileID: 347206174}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5774,7 +5787,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd2c092ef7c198f40bedf3b47ac16a1c, type: 2}
+  - {fileID: 2100000, guid: 60a8a2a30c9c2d447b5f196ee9c065f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14499,7 +14512,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17998
+  m_Name: pb_Mesh32156
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -14983,6 +14996,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: -7049877918438093708, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df64dea0490dc2d4a99d92d4fc24b4fb, type: 2}
+    - target: {fileID: -4683669308469848369, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2d4c2b1b878b5c45b2eb9cb04c53f56, type: 2}
+    - target: {fileID: -3671582440132503848, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df64dea0490dc2d4a99d92d4fc24b4fb, type: 2}
     - target: {fileID: 919132149155446097, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
       propertyPath: m_Name
       value: Bench (1)
@@ -15877,7 +15902,7 @@ GameObject:
   - component: {fileID: 907599348}
   - component: {fileID: 907599347}
   - component: {fileID: 907599346}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cube (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15930,7 +15955,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd2c092ef7c198f40bedf3b47ac16a1c, type: 2}
+  - {fileID: 2100000, guid: 60a8a2a30c9c2d447b5f196ee9c065f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19578,7 +19603,7 @@ GameObject:
   - component: {fileID: 1170304118}
   - component: {fileID: 1170304117}
   - component: {fileID: 1170304116}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19644,7 +19669,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd2c092ef7c198f40bedf3b47ac16a1c, type: 2}
+  - {fileID: 2100000, guid: 60a8a2a30c9c2d447b5f196ee9c065f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22769,7 +22794,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18194
+  m_Name: pb_Mesh32350
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -25841,7 +25866,7 @@ GameObject:
   - component: {fileID: 1620715663}
   - component: {fileID: 1620715662}
   - component: {fileID: 1620715661}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Cube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25894,7 +25919,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dd2c092ef7c198f40bedf3b47ac16a1c, type: 2}
+  - {fileID: 2100000, guid: 60a8a2a30c9c2d447b5f196ee9c065f9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -29633,7 +29658,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17640
+  m_Name: pb_Mesh31796
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -29960,6 +29985,18 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: -7049877918438093708, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df64dea0490dc2d4a99d92d4fc24b4fb, type: 2}
+    - target: {fileID: -4683669308469848369, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a2d4c2b1b878b5c45b2eb9cb04c53f56, type: 2}
+    - target: {fileID: -3671582440132503848, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: df64dea0490dc2d4a99d92d4fc24b4fb, type: 2}
     - target: {fileID: 919132149155446097, guid: cf02f96c4547fa248adbe2edcbff77cf, type: 3}
       propertyPath: m_Name
       value: Bench
@@ -31437,7 +31474,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17376
+  m_Name: pb_Mesh31532
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31686,7 +31723,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17596
+  m_Name: pb_Mesh31752
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -33527,7 +33564,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh17246
+  m_Name: pb_Mesh31402
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
