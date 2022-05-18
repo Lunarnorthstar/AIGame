@@ -131,7 +131,7 @@ public class PlayerPickup : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (other.name == "Monster" && objects >= 4)
+        if (other.name == "Monster" && objects >= 2)
         {
             //Debug.Log("Boo");
 
