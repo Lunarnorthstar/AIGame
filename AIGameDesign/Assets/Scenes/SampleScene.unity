@@ -2807,7 +2807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -3889,8 +3889,8 @@ MonoBehaviour:
   walkRadius: 15
   idleDelay: 2
   currentClues: 0
-  alertRange: 40
-  longAlertRange: 50
+  alertRange: 30
+  longAlertRange: 40
   protectiveRange: 10
   normalSpeed: 4
   protectiveSpeed: 9
@@ -7432,7 +7432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -7494,7 +7494,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402418761}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -9375,7 +9375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -10097,7 +10097,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -12188,7 +12188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -14485,7 +14485,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -21609,7 +21609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -21869,7 +21869,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1317176869}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -25452,7 +25452,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -27697,7 +27697,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -27759,7 +27759,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1745989451}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -28984,7 +28984,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802391373}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -29136,7 +29136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -29427,7 +29427,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -30207,7 +30207,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5758547925501561852, guid: fa91f06681aa5f94ebc7df0231c40388, type: 3}
       propertyPath: modelPrefab
@@ -31898,7 +31898,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2053556353}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
